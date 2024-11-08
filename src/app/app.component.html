@@ -1,0 +1,18 @@
+<div class="container" style="height: 100vh">
+  <div class="view">
+    <div class="grid">
+      @for(row of grid;track ridx;let ridx = $index)
+      {
+        @for(col of row;track cidx;let cidx = $index){
+          <div class="block" [ngStyle]="{ 'background-color': color[ridx][cidx]}">
+            {{ grid[ridx][cidx] }}
+          </div>
+        }
+      }
+    </div>
+    <div class="buttons">
+      <button class="btn" (click)="reload()">reload</button>
+      <button class="btn" (click)="findPath()">start</button>
+    </div>
+  </div>
+</div>

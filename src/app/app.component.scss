@@ -1,0 +1,28 @@
+.block{
+  justify-content: center;
+  text-align: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns:repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);
+  column-gap: 2px;
+  row-gap: 2px;
+  width: 300px;
+}
+
+.block{
+  width: 30px; height: 30px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.buttons{
+  display: block;
+}
